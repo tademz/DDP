@@ -38,7 +38,7 @@ shinyUI(
           a("historical data", href="https://spark-public.s3.amazonaws.com/dataanalysis/loansData.rda"), 
           a("(see associated code book)", href="https://spark-public.s3.amazonaws.com/dataanalysis/loansCodebook.pdf"), 
           "from the Lending Club to predict the interest rate a borrower will pay based on the loan length in months, the amount requested in dollars, and their FICO score."),
-        helpText("See the accompanying", a("presentation", href="http://rpubs.com/butlermh/lendingclub"), "about this app for more information"),
+        helpText("See the accompanying", a("presentation", href="http://rpubs.com/tamdemz/read"), "about this app for more information"),
         h3("Predicted Interest Rate"),
         verbatimTextOutput("prediction")
     )

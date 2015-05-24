@@ -19,7 +19,7 @@ loansData$FICO.max <- as.numeric(gsub("(.*)-", "", as.character(loansData$FICO.R
 loansData$FICO.mid <- (loansData$FICO.max - loansData$FICO.min) / 2 + loansData$FICO.min
 loansData$interest  <- as.numeric(gsub("%","",as.character(loansData$Interest.Rate)))
 
-loansData$FICO.cut = cut2(loansData$FICO.mid, g=5)
+loansData$FICO.cut = cut(loansData$FICO.mid, g=5)
 
 # drop any empty factor levels to keep the user interface clear
 
